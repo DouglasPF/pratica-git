@@ -1,0 +1,11 @@
+Pratica-Shell
+
+1. Foi aberto o programa Git Bash (Shell) e foi imprimido o diretório em que ele estava com o comando '$ pwd'
+2. O diretório foi mudado para o Desktop com o comando '$ cd Desktop'
+3. Foi criada uma pasta chama 'pratica-shell' com o comando '$ mkdir pratica-shell' no Desktop
+4. Listando os itens presentes no Desktop com o comando "$ ls", e depois mudamos o diretório para
+a nova pasta com o comando "$ cd pratica-shell"
+5. Foi criado um arquivo chamado 'intro-shell.txt' com o programa Notepad++ e listado com o comando '$ ls'
+6. Foi feito este passo a passo no arquivo
+7. Criou-se um novo arquivo com o Notepad++ com o nome 'alunos.txt'
+8. O nome dos alunos foi colocado no arquivo de texto 'alunos.txt'
