@@ -1,0 +1,12 @@
+Ordenando as cartas virada para baixo, mantendo uma ordem de A até E, vira-se a primeira carta 'A' juntamente a carta logo em seguida 'B'
+Se A < B, mantem a ordem das cartas, se A > B as ordens das cartas são invertidas e repete-se o processo com a carta da frente (Virando 'A' junto com 'C')
+Quando a carta 'A' for virada junto com a 'E', se dá inicio ao processo com o começo a partir da carta 'B' e assim por diante, até as cartas se encontrarem em ordem crescente
+No Phyton
+for i in range (0, N-2):
+for j in range (i+1,N-1):
+   if carta [i]<carta[j]:
+   continue
+else:
+   temp=carta[i]
+   carta[i]=carta[j]
+   carta[j]=temp
