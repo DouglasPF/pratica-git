@@ -1,0 +1,57 @@
+1. Utilizando o Bash, localizamos o diretório com '$ pwd'
+2. Mudamos o diretório para o Desktop com '$ cd desktop'
+3. Criamos a pasta repo com o comando '$ mkdir repo'
+4. Mudamos o diretório para a pasta repo com o comando '$ cd repo'
+5. Iniciamos um repositório na pasta com o comando '$ git init --bare'
+6. Listamos os arquivos que o git criou com '$ ls' aparecendo: config  description  HEAD  hooks/  info/  objects/  refs/
+7. Retornamos ao desktop com '$ cd ..'
+8. Criamos um clone do repositório com o comando '$ git clone repo pratica-git-douglas'
+9. Entramos no clone criado com o comando '$ cd pratica-git-douglas'
+10. Configuramos o nome e e-mail do usuario do git com o comando '$ git config user.name "douglas parreira de freitas"' e 'git config user.email douglaspfreitas@live.com'
+11. Copiamos os arquivos alunos.txt e intro-shell.txt para o clone do repositório: pratica-git-douglas.
+12. Rastreamos o arquivo alunos.txt no git com '$ git add alunos.txt'
+13. Fizemos um comentário do que foi feito com o comando '$ git commit -m " Adicionei dois novos arquivos alunos.txt e intro-shell.txt no clone pratica-git-douglas e rastreei o arquivo alunos.txt no git
+"'
+14. Verificamos o histórico com o comando '$ git log' e confirmamos que o commit feito apareceu
+15. Rastreamos o arquivo intro-shell.txt do clone pratica-git-douglas no git com o comando '$ git add intro-shell.txt'
+16. Fizemos um comentario do que foi feito com o comando '$ git commit -m "Rastreei o arquivo intro-shell.txt do clone pratica-git-douglas no git"'
+17. Verificamos o histórico com o comando '$ git log' e confirmamos que o commit feito apareceu
+18. Criamos um arquivo vazio chamado 'bubble-sort.txt' com o Notepad++ no clone 'pratica-git-douglas'
+19. Rastreamos o arquivo bubble-sort.txt do clone pratica-git-douglas no git com o comando '$ git add bubble-sort.txt' e criamos clones para os outros membros do grupo
+com o comando 
+20. Fizemos um comentario do que foi feito com o comando '$ git commit -m "Adicionei um novo arquivo bubble-sort.txt ao clone pratica-git-douglas e rastreei no git"
+'$ git clone repo pratica-git-breno' e '$ git clone repo pratica-git-jonatan'
+21. Verificamos o histórico com o comando '$ git log' e confirmamos que o commit feito apareceu 
+22. Empurrei os commits para o repositório original com o comando '$ git push origin master'
+23. Navegamos até o repositório original com o comando '$ cd ../repo/'
+24. E verificamos o histórico com o comando '$ git log' e todos os commits foram passados para o repositório original
+25. Mudamos o componente do grupo
+26. Entramos no clone do novo membro com o comando '$ cd pratica-git-breno'
+27. Configuramos o nome e e-mail do usuario do git com o comando '$ git config user.name "breno de brito fontel"' e 'git config user.email brenofontel03@gmail.com'
+28. Verificamos que o clone pratica-git-breno é clone do repo original: origin  C:/Users/Douglas Parreira/Desktop/repo (fetch), com o comando '$ git remote -v'
+29.Confirmamos que o clone do repositório está com os commits feitos pelo último usuário com o comando '$ git log'
+30.Atualizamos o clone pratica-git-breno com os commtis do remoto enviados pelo último usuario
+31.Editamos o arquivo bubble-sort.txt com a versão do método de agrupamento de operações repetidas do jogo das cartas com Notepad++
+32.Rastreamos o arquivo bubble-sort.txt no git com o comando '$ git add bubble-sort.txt'
+33.Fizemos um comentario do que foi feito com o comando '$ git commit -m "editei o arquivo bubble-sort.txt e rastreei este arquivo no no git clone pratica-git-breno"
+'
+34.Empurramos as modificações feitas no clone pratica-git-breno para o repositório original atraves do comando '$ git push origin master'
+35.Voltamos o repositório para a versão do arquivo bubble-sort.txt que contem o as instruções originais com o comando '$ git checkout 5c3c792125e89bfd27b3267fa2d248e98536ca5a'
+36.Voltamos o repositório para a versão mais atual com o comando '$ git checkout fb0eff1ef9d48609604659cd41bd1cfee12c492d'
+37. Trocamos o membro do grupo, e entramos no clone do repositório do novo membro com o comando '$ cd '/c/Users/Douglas Parreira/Desktop/pratica-git-jonatan'
+38. Configuramos o nome e e-mail do usuario do git com o comando '$ git config user.name "jonatan nascimento"' e 'git config user.email jonatan_henrique123@hotmail.com'
+39. Verificamos o histórico do clone, com o comando '$ git log' e observamos que ele está em uma versão anterior
+40. Editamos o arquivo 'bubble-sort.txt' com as instruções apresentadas pelo professor
+41. Rastreamos o arquivo 'bubble-sort.txt' modificado com o comando '$ git add bubble-sort.txt'
+42. Fizemos um commit com o comando '$ git commit -m "Modifiquei e rastreei o arquivo buble-sort.txt com as instruções dada pelo professor""'
+43. Empurramos as mudanças para o repositório com o comando '$ git push origin master' e percebemos um conflito no programa, haja visto que este clone
+não estava atualizada com a versão mais recente.
+44. Atualizamos o clone com a versão mais recente com o comando '$ git pull origin master'
+45. Modificamos novamente o arquivo 'bubble-sort.txt' e rastreamos com o comando '$ git add bubble-sort.txt' 
+46. Fizemos um commit com o comando $ git commit -m "Modifiquei o arquivo bubble-sort.txt com as instruções do professor"
+47. Empurramos as novas mudanças para o repositório com o comando $ git commit -m "Modifiquei o arquivo bubble-sort.txt com as instruções do professor"
+48. Criamos um repositório no site do GitHub com o username DouglasPF
+49. Adicionamos o repositório do GitHub como um remoto a partir do comando '$ git remote add upstream https://github.com/DouglasPF/pratica-git.git'
+50. Empurramos os commits (atualizados) para o repositório do GitHub $ git push upstream master
+51. Criamos uma Issue no repositório da disciplina (https://github.com/leouieda/matematica-especial). com o titulo "Prática git: Breno, Douglas, Jonatan" 
+
